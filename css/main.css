@@ -1,0 +1,318 @@
+/* styles adapted from http://labs.jensimmons.com/2016/examples/image-gallery-grid-1.html 
+after watching https://www.youtube.com/watch?v=qNtJ5p3h2A4 */
+
+html {
+  font-family: 'Gruppo', cursive, lato, sans-serif;
+  font-size: 18px;
+  background: #6699cc;
+  background: linear-gradient(to bottom, #f6e6b4 0%,#ed9017 100%);  }
+
+h1 {
+  font-family: 'Gruppo', cursive, lato, sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+  padding: 0.75em 0.25em;
+  background: #2c2c2c;
+  background: linear-gradient(to bottom, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%);
+  }
+
+/* CSS3 button styles from Codrops https://tympanus.net/codrops/2009/09/02/20-fresh-and-colorful-css3-buttons/ */
+
+             .button{
+                padding:5px 15px 5px 15px;
+                text-decoration: none;
+                display: inline-block;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                border-bottom: 1px solid rgba(0,0,0,0.25);
+                font-family: "Lucida Grande",Lucida,Verdana,sans-serif;
+                outline:none;
+                position:relative;
+                font-size: 32px;
+                margin:10px;
+                background:transparent url(buttonover.png) repeat-x top left;
+                white-space:nowrap;
+            }
+            .button:hover{
+                background-color: #777;
+            }
+            .button:active{
+                top: 1px;
+                left:1px;
+            }
+            .shadow{
+                background-color: #a3a3a3;
+                border: 2px solid #777;
+                color: #FFF;
+                font-weight:bold;
+                text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+            }
+            .engraved{
+                background: #666;
+                border: 2px solid #777;
+                color: #000;
+                text-shadow: 0px 1px 1px #fff;
+                font-weight: bold;
+            }
+            .glow{
+                color: #fff;
+                background: #888;
+                border: 2px solid #777;
+                text-shadow: 1px 1px 6px #fff;
+            }
+            .white{
+                color: #fff;
+                background: #fff;
+                text-shadow: 1px 1px 4px #000;
+                border: 2px solid #f0f0f0;
+                font-family: "Arial";
+                font-weight:bold;
+                text-transform:uppercase;
+                letter-spacing:-1px;
+            }
+            .white:hover{
+                background-color:#f1f1f1;
+            }
+            .red{
+                background-color: #B00000;
+                border: 1px solid #7F0000;
+                color: #FFF;
+                text-shadow: 1px 1px 4px #000;
+                font-family: "Palatino Linotype";
+            }
+            .red:hover{
+                background-color:#800000;
+            }
+
+            .lightblue{
+                background-color: #7FB0F0;
+                color: #FFF;
+                text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+                font-weight:100;
+            }
+            .lightblue:hover{
+                background-color:#7FA0C0;
+            }
+            .olive{
+                background-color: #B0E000;
+                border: 1px outset #D0E000;
+                color: #FFF;
+                font-style:italic;
+                text-shadow: 0 2px 1px rgba(0,0,0,0.2);
+            }
+            .olive:hover{
+                background-color: #90A000;
+            }
+            .orange{
+                background-color: #FFCC00;
+                border: 1px outset #F2FF00;
+                color: #FFF;
+                font-family:Helvetica;
+                font-weight:bold;
+            }
+            .orange:hover{
+                background-color: #FF8000;
+            }
+            .pink{
+                background-color: #C0107F;
+                border: 1px outset #70107F;
+                color: #FFF;
+                font-family:"Georgia";
+                font-weight:bold;
+            }
+            .pink:hover{
+                background-color: #F0107F;
+            }
+            .pink:active{
+                border: 1px inset #70107F;
+            }
+            .sea{
+                background-color: #20807F;
+                color: #FFF;
+            }
+            .sea:hover{
+                background-color: #60807F;
+            }
+            .rose{
+                background-color: #F07FD0;
+                color: #FFF;
+                font-family: "Palatino Linotype";
+                font-style: italic;
+                letter-spacing:-1px;
+                text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+            }
+            .rose:hover{
+                background-color: #B07FA0;
+            }
+            .black{
+                background-color: #000;
+                background-image:url(buttonover2.png);
+                color: #FFF;
+                letter-spacing:-1px;
+                text-shadow: 0 2px 1px rgba(0,0,0,0.2);
+            }
+            .black:hover{
+                background-color: #777;
+            }
+
+            .sand{
+                background-color: #FFF090;
+                background-image:url(buttonover2.png);
+                color: #fff;
+                letter-spacing: 3px;
+                text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+            }
+            .sand:hover{
+                background-color: #F0C07F;
+            }
+
+            .violet{
+                background-color: #9400D3;
+                background-image:url(buttonover2.png);
+                color: #777;
+                font-family:"Arial Black";
+                text-shadow: 0px 1px 1px #fff;
+            }
+            .violet:hover{
+                background-color: #8A2BE2;
+            }
+
+            .green{
+                background-color: #32CD32;
+                background-image:url(buttonover2.png);
+                color: #fff;
+                font-family:"Century Gothic";
+                text-transform:uppercase;
+                font-style:italic;
+                text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+            }
+            .green:hover{
+                background-color: #2F4F4F;
+            }
+            .darkblue{
+                background-color: #00008B;
+                background-image:url(buttonover2.png);
+                color: #fff;
+                font-family:"Impact";
+                text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+            }
+            .darkblue:hover{
+                background-color: #191970;
+            }
+            .sunset{
+                background-color: #FF6347;
+                background-image:url(buttonover2.png);
+                color: #777;
+                font-family:"Palatino Linotype";
+                text-transform:uppercase;
+                text-shadow: 0px 1px 1px #fff;
+            }
+            .sunset:hover{
+                background-color: #FF7F50;
+            }
+            .choco{
+                background-color: #D2691E;
+                background-image:url(buttonover2.png);
+                color: #fff;
+                font-family:"Gill Sans";
+                text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+            }
+            .choco:hover{
+                background-color: #D2B48C;
+            }
+            .cadet{
+                background-color: #5F9EA0;
+                background-image:url(buttonover2.png);
+                color: #fff;
+                font-family: "Arial Narrow";
+                text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+            }
+            .cadet:hover{
+                background-color: #008080;
+            }
+            .aqua{
+                background-color: #00FFFF;
+                background-image:url(buttonover2.png);
+                color: #fff;
+                font-family: "Tahoma";
+                text-shadow: 1px 1px 4px #000;
+            }
+            .aqua:hover{
+                background-color: #00FFCC;
+}
+
+ul {
+  padding: 0; }
+
+li {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 4rem;
+  position: relative;
+  opacity: 0.75; }
+
+li:focus {
+    border: 10px solid seagreen;
+    opacity: 1.0; }
+
+span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); }
+
+ul {
+  /* autoprefixer: off */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  grid-gap: 1em;
+  margin: 1em; }
+
+li.highlight-box {
+  grid-row: span 2;
+  grid-column: span 2; }
+
+li.highlight-tall {
+  grid-row: span 2; }
+
+li.highlight-wide {
+  grid-column: span 2; }
+
+img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  border: 1px solid black;
+  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }
+
+	/* from w3schools https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+	
+		  li.zoom {
+    padding: 20px;
+    background-color: seashell;
+    transition: transform .2s; /* Animation */
+  /*  width: 200px;
+    height: 200px;
+    margin: 0 auto;*/
+}
+
+li.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    opacity: 1.0; }
+
+.warning {
+  color: red;
+  font-size: 200%; }
+
+@supports (display: grid) {
+  .warning {
+    display: none; } }
+	
